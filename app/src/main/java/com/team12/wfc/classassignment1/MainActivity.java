@@ -55,7 +55,7 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        acceleration.setText("X: "+ event.values[0] + "\nY: "+event.values[1]+"\nZ: " +event.values[2]);
+        acceleration.setText("X: "+ (int)event.values[0] + "\nY: "+(int)event.values[1]+"\nZ: " +(int)event.values[2]);
     }
 
     @Override
